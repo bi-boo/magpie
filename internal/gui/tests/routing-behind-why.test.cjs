@@ -62,7 +62,7 @@ function serve(lang, route) {
 // the conversation kept on another
 const words = {
   en: ["75% left · renews in 20 h · one renewing sooner goes first", "75% left · conversation kept on another", "answered this request"],
-  zh: ["剩余 75% · 20 小时后重置 · 先用更早重置的账号", "剩余 75% · 会话留在另一个账号", "回答了这个请求"],
+  zh: ["剩余 75% · 20 小时后重置 · 先用更早重置的账号", "剩余 75% · 会话留在另一个账号", "已响应此请求"],
   "zh-TW": ["剩餘 75% · 20 小時後重置 · 先用更早重置的帳號", "剩餘 75% · 對話留在另一個帳號"],
   ja: ["残り 75% · 20 時間 後に更新 · 先に更新されるアカウントを優先", "残り 75% · 会話は別のアカウントに固定"],
   de: ["75% übrig · erneuert sich in 20 h · eines, das sich früher erneuert, geht vor", "75% übrig · Unterhaltung bleibt bei einem anderen"],

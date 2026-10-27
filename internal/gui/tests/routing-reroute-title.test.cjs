@@ -55,7 +55,7 @@ function serve(lang) {
 
 const want = {
   en: ["Codex · group/best → Relay · gpt-6-sol\nrerouted from Claude · ann@example.com · claude-opus-5", "Codex · group/best → claude"],
-  zh: ["Codex · group/best → Relay · gpt-6-sol\n改道自 Claude · ann@example.com · claude-opus-5", "Codex · group/best → claude"],
+  zh: ["Codex · group/best → Relay · gpt-6-sol\n由 Claude · ann@example.com · claude-opus-5 切换而来", "Codex · group/best → claude"],
 };
 
 for (const engine of (process.env.BROWSER ? [process.env.BROWSER] : ["chromium", "webkit"])) {

@@ -58,7 +58,7 @@ const ROUTINGS = [
   ["", "Smart", "智能"], ["order", "In order", "按顺序"], ["rotate", "In turn", "轮流"],
   ["usage", "Least used first", "用量少的优先"], ["pace", "Weekly pace", "重置前用完"],
 ];
-const STAYS = [["", "Auto", "自动"], ["session", "Session", "整个会话"], ["turn", "Within a turn", "一轮之内"], ["off", "Off", "关闭"]];
+const STAYS = [["", "Auto", "自动"], ["session", "Session", "整个会话不换号"], ["turn", "Within a turn", "单轮内不换号"], ["off", "Off", "关闭"]];
 
 for (const engine of (process.env.BROWSER ? [process.env.BROWSER] : ["chromium", "webkit"])) {
   for (const lang of ["en", "zh"]) {
@@ -126,7 +126,7 @@ for (const engine of (process.env.BROWSER ? [process.env.BROWSER] : ["chromium",
         assert.deepEqual(posts, []);
         // picked again and saved: the Save carries them
         await opt(L.routing, zh ? "轮流" : "In turn").click();
-        await opt(L.stays, zh ? "整个会话" : "Session").click();
+        await opt(L.stays, zh ? "整个会话不换号" : "Session").click();
         await page.getByRole("button", { name: L.save, exact: true }).click();
         await page.waitForFunction(() => !document.querySelector(".editor"));
         assert.deepEqual(posts.map((x) => x.path), ["/api/provider/save"]);

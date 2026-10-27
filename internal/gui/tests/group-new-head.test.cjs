@@ -23,7 +23,7 @@ const found = { id: "auto-m", name: "Model M", members: ["a/m", "b/m"], auto: tr
 
 const words = {
   en: { btn: "New group", tip: "Make a routing group of any models you like — agents pick it as one model" },
-  zh: { btn: "新建组", tip: "用任意模型新建一个路由组，Agent 会把它当作一个模型来选" },
+  zh: { btn: "新建路由组", tip: "把多个模型组成一个路由组，Agent 选用它就像选用一个模型" },
 };
 
 // requests enough to put the groups below the window's fold

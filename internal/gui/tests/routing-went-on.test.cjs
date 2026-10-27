@@ -103,7 +103,7 @@ const want = {
   en: { went: "and the request goes on to b@example.com before any of the reply reaches Claude Code", gets: ["wouldn't fix", "so Claude Code gets"], passed: "passed to", row: "went on to the next",
     left: "nobody is left to try, so Claude Code gets the error", on: "goes on to", earlier: "Claude Code gets the error an earlier try gave",
     rests: "It rests 1 min for claude-sonnet-4-6 alone", calm: "so it doesn't rest" },
-  zh: { went: "请求在回复到达 Claude Code 前转给 b@example.com", gets: ["换账号也无法解决", "Claude Code 收到此错误"], passed: "已交给", row: "已转给下一个",
+  zh: { went: "请求随即转给 b@example.com，Claude Code 不会收到这次失败", gets: ["换账号也无法解决", "Claude Code 收到此错误"], passed: "已交给", row: "已转给下一个",
     left: "且无其他可试，Claude Code 收到此错误", on: "转给", earlier: "Claude Code 收到的是此前某次尝试的错误",
     rests: "连续 2 次", calm: "不休息" },
   "zh-TW": { went: "請求在回覆到達 Claude Code 前轉給 b@example.com", gets: ["換帳號也無法解決", "Claude Code 收到此錯誤"], passed: "已交給", row: "已轉給下一個",
