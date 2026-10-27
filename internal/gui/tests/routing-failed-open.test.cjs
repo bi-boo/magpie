@@ -52,7 +52,7 @@ function serve(lang, live) {
 
 const want = {
   en: { head: "How the request at", said: "It said: " + vendor },
-  zh: { head: "的请求是怎么路由的", said: "原话：" + vendor },
+  zh: { head: "那条请求的路由过程", said: "原话：" + vendor },
 };
 
 for (const engine of (process.env.BROWSER ? [process.env.BROWSER] : ["chromium", "webkit"])) {

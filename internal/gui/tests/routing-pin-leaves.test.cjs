@@ -54,7 +54,7 @@ function serve(lang, feed) {
 
 const words = {
   en: { picked: "How the request at", last: "How the last request was routed", back: "Back to live" },
-  zh: { picked: "的请求是怎么路由的", last: "最近一个请求是怎么路由的", back: "回到实时" },
+  zh: { picked: "那条请求的路由过程", last: "最近一个请求的路由过程", back: "回到实时" },
   "zh-TW": { picked: "的請求是怎麼路由的", last: "最近一個請求是怎麼路由的", back: "回到即時" },
   ja: { picked: " のリクエストのルーティング", last: "直近のリクエストのルーティング", back: "ライブに戻る" },
   de: { picked: "Wie die Anfrage um", last: "Wie die letzte Anfrage weitergeleitet wurde", back: "Zurück zu live" },
